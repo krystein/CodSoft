@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>K-Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="./css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="fixed-top">
+      <nav>
+        <div class="nav-item nav-bar">
+          <div class="nav-toggle" onclick="toggleNav()">☰</div>
+          <div class="nav-menu" id="navLinks">
+            <div class="navshow">
+              <div class="nav-close" onclick="closeNav()">✕</div>
+              <ul class="links">
+                <li>
+                  <a class="nav-link" href="#home" onclick="closeNav()"
+                    >Home
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#about" onclick="closeNav()"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="#resume" onclick="closeNav()"
+                    >Resume</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="#project" onclick="closeNav()"
+                    >Project</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="#contact" onclick="closeNav()"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" onclick="toggleNav()"></div>
+      </nav>
+    </header>
+    <button id="scrollUpBtn" onclick="scrollToTop()">↑</button>
+    <section
+      class="d-flex justify-content-center align-items-center hero"
+      id="home">
+      <div class="text-center text-white">
+        <h1 class="">I'm Christain Nworah</h1>
+        <h3 class="">A Front-end Developer</h3>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-md offset-0 p-3">
+            <img
+              src="/img/Screenshot_20210613-121418.png"
+              alt=""
+              class="img-fluid" />
+          </div>
+          <div class="col-md p-3 justify-content-center">
+            <div>
+              <h1 class="text-center">MY BIO</h1>
+              <p class="text-justify line">
+                A graduate of Electrical/Electronic Engineering with 4+ years of
+                demonstrated working experience. I am aiming to leverage
+                academic experience and a proven knowledge of programming, web
+                development and computer networking to successfully achieve the
+                goals and target of your company. I am frequently praised as a
+                hard-working person by my peers, I can be relied upon to help
+                your company achieve its goal
+              </p>
+            </div>
+            <div>
+              <div class="row mt-3">
+                <label for="customRange1">HTML5</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="custom-range w-75"
+                    id="customRange1"
+                    value="85"
+                    disabled />
+                  <p class="m-0"><span id="currentRating"></span>%</p>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label for="customRange1">CSS3</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="custom-range w-75"
+                    id="customRange2"
+                    value="80"
+                    disabled />
+                  <p class="m-0"><span id="currentRating1"></span>%</p>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label for="customRange1">Javascript</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="custom-range w-75"
+                    id="customRange3"
+                    value="70"
+                    disabled />
+                  <p class="m-0"><span id="currentRating2"></span>%</p>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label for="customRange1">React.js</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="custom-range w-75"
+                    id="customRange4"
+                    value="65"
+                    disabled />
+                  <p class="m-0"><span id="currentRating3"></span>%</p>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label for="customRange1">PHP</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="custom-range w-75"
+                    id="customRange5"
+                    value="70"
+                    disabled />
+                  <p class="m-0"><span id="currentRating4"></span>%</p>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <label for="customRange1">MySQL</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="custom-range w-75"
+                    id="customRange6"
+                    value="70"
+                    disabled />
+                  <p class="m-0"><span id="currentRating5"></span>%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <div class="container">
+        <h2 class="text-center my-5">Projects</h2>
+        <div class="row">
+          <div class="col-lg col-md col-sm offset-0 my-3">
+            <video class="img-fluid" controls autoplay>
+              <source src="video/20231018_171941.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <p>
+                Front-end development of this website was done using React.js
+              </p>
+              <p>
+                React-animations, styled components, react-bootstrap and
+                React-router-dom were used to achieve the front-end design.
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary">
+                  <a href="https://christchurchit.netlify.app/">more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md col-sm offset-0">
+            <video class="img-fluid" controls autoplay>
+              <source src="video/php.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <p>Full-stack development of this website was done using PHP</p>
+              <p>
+                Bootstrap and Object Oriented PHP were used to achieve the Web
+                design. MySQL database was used and hosted locally using Xampp
+                control panel
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary"><a href="/">more</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md col-sm offset-0 my-3">
+            <video class="img-fluid" controls autoplay>
+              <source src="video/20231018_172241.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <p>
+                Front-end development of this website was done using React.js
+              </p>
+              <p>
+                React-animations, styled components, react-bootstrap and
+                React-router-dom were used to achieve the front-end design.
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary">
+                  <a href="https://bluekanel.netlify.app/">more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md col-sm offset-0">
+            <video class="img-fluid" controls autoplay>
+              <source src="video/final-project.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <p>
+                Front-end development of this website was done using HTML5, CSS
+                and Javascript
+              </p>
+              <p>
+                Styles were written from scratch and all responsiveness were in
+                check during the development of the project
+              </p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary"><a href="">more</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resume">
+      <h1 class="text-center my-3">RESUME</h1>
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-md offset-0 mb-5">
+            <img
+              src="/img/IMG-20190801-WA0008.jpg"
+              class="img-fluid"
+              alt="img" />
+            <div class="mt-5">
+              <h3>Education</h3>
+              <hr />
+              <div>
+                <div class="mt-3">
+                  <h4>Front-end Development</h4>
+                  <h5>Azubi Africa (2023 - 2024)</h5>
+                </div>
+                <div class="mt-3">
+                  <h4>Bachelor in Electrical/Electronic Engineering</h4>
+                  <h5>University of Port Harcourt (2015 - 2021)</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md offset-0">
+            <div>
+              <h3>Work Experience</h3>
+              <hr />
+              <div class="mt-3">
+                <div>
+                  <div>
+                    <h4>Web development Intern @CodSoft</h4>
+                    <h5>Dec 2023 - Jan 2024</h5>
+                  </div>
+                  <ul>
+                    <li>
+                      Creating a personal portfolio using CSS and HTML is a
+                      popular beginner web development project.
+                    </li>
+                    <li>A landing page using HTML5, CSS3 AND Javascript</li>
+                    <li>
+                      To create a basic calculator using CSS, HTML, and
+                      JavaScript
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <h4>Front-end Developer(React.js) @Freelance</h4>
+                    <h5>Oct 2022 - till date</h5>
+                  </div>
+                  <ul>
+                    <li>Created a compatible, custom client dashboard</li>
+                    <li>
+                      Designed multiple dynamic and browser compatible pages
+                      using HTML5, CSS3, JavaScript (React, Redux)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <h4>Web developer(PHP) @Freelance</h4>
+                    <h5>Feb 2023 - till date</h5>
+                  </div>
+                  <ul>
+                    <li>
+                      Created a compatible fashion website to upload picture.
+                    </li>
+                    <li>
+                      Dynamic pages using HTML5, CSS3, Bootstrap and JavaScript.
+                    </li>
+                    <li>Used PHP as backend.</li>
+                    <li>Used MySQL database to store information.</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <h4>Front-end developer(React.js) @Learn-IT Academy</h4>
+                    <h5>Apr 2022 - Oct 2022</h5>
+                  </div>
+                  <ul>
+                    <li>
+                      Built the next version of client web application to add
+                      new user designs and features using native JavaScript and
+                      in-house framework
+                    </li>
+                    <li>
+                      Built cross-browser compatible and accessibility compliant
+                      websites
+                    </li>
+                    <li>Tutor young developers’ basics of programming.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-5 mb-5 p-2" id="contact">
+      <div class="container text-center">
+        <h1>CONTACT ME</h1>
+        <p class="mb-5">
+          All Messages will be directed to my Email<br />Or<br />Kindly Contact
+          me on social media handles by clicking on the social media icons
+        </p>
+        <form>
+          <div class="row mb-3 align-items-center">
+            <div class="col-md-6">
+              <div class="form-group pb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  required
+                  placeholder="Name" />
+              </div>
+              <div class="form-group pb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  required
+                  placeholder="Email" />
+              </div>
+              <div class="form-group pb-3">
+                <input type="text" class="form-control" placeholder="Subject" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <textarea
+                name=""
+                id=""
+                cols=""
+                rows="7"
+                class="form-control"
+                required
+                placeholder="Message"></textarea>
+            </div>
+          </div>
+          <input
+            type="submit"
+            class="btn btn-outline-light h2 btn-block"
+            value="Send Message" />
+        </form>
+      </div>
+    </section>
+    <footer class="text-dark py-1 py-lg-0 px-lg-5 mt-4">
+      <div class="text-center">
+        <div class="d-flex justify-content-center" style="gap: 20px">
+          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <hr />
+        <p class="mb-2 small">
+          Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          &copy; TechBot
+        </p>
+      </div>
+      <script src="index.js"></script>
+    </footer>
+  </body>
+</html>
